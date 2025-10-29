@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoThread | Preserve What You Love</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic touch -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-navy': '#101828', // Dark background for sophistication (slate-900 / midnight blue feel)
+                        'eco-green': '#065F46', // Muted dark green for eco accents
+                        'fabric-cream': '#F9FAFB', // Light color for text and highlights
+                        'soft-blue': '#4B5563', // Muted blue-grey for secondary elements
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Apply Inter font and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Style for the fixed header */
+        .fixed-header {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        /* Custom image holder for the sleek look */
+        .product-image-holder {
+            /* Using a darker cream or very light navy mix to stand out against deep-navy */
+            background: linear-gradient(145deg, #1f2a37, #101828);
+            border: 1px solid #374151;
+        }
+    </style>
+</head>
+<body class="bg-deep-navy text-fabric-cream">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-deep-navy/95 backdrop-blur-sm fixed-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2 text-2xl font-bold tracking-wider text-eco-green">
+                    <i data-lucide="leaf" class="w-6 h-6"></i>
+                    <span>EcoThread</span>
+                </a>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#shop" class="text-lg text-fabric-cream hover:text-eco-green transition duration-300">Shop</a>
+                    <a href="#features" class="text-lg text-fabric-cream hover:text-eco-green transition duration-300">Why EcoThread?</a>
+                    <a href="#commitment" class="text-lg text-fabric-cream hover:text-eco-green transition duration-300">Our Commitment</a>
+                </nav>
+                <!-- CTA Button -->
+                <a href="#shop" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-deep-navy bg-eco-green hover:bg-green-700 transition duration-300">
+                    Buy Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        
+        <!-- 1. Hero Section: Preserve What You Love -->
+        <section id="hero" class="relative overflow-hidden pt-12 md:pt-24 pb-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tighter mb-4 text-fabric-cream">
+                        PRESERVE WHAT YOU LOVE.
+                    </h1>
+                    <p class="text-xl md:text-2xl text-soft-blue mb-8">
+                        Fabric cleansers that are **Gentle on Clothes. Kind to Earth.**
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#shop" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-full shadow-lg text-deep-navy bg-eco-green hover:bg-green-700 transition duration-300 transform hover:scale-105">
+                            Shop the Collection
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Image Placeholder (Sleek Product Shot) -->
+                <div class="flex justify-center md:justify-end">
+                    <!-- Placeholder using a clean, rounded box with product illustration -->
+                    <div class="w-full max-w-sm aspect-square rounded-xl product-image-holder p-6 flex flex-col items-center justify-center space-y-4 shadow-2xl">
+                        <i data-lucide="package" class="w-16 h-16 text-eco-green"></i>
+                        <h2 class="text-2xl font-semibold text-fabric-cream">EcoThread Cleanser</h2>
+                        <p class="text-soft-blue text-center">Gentle formula for high-end fabrics: Silk, Wool, Cashmere.</p>
+                        <img src="https://placehold.co/200x280/101828/9CA3AF?text=Product+Mockup" alt="EcoThread Fabric Cleanser bottle mockup" class="mt-4 rounded-lg shadow-xl" onerror="this.src='https://placehold.co/200x280/101828/9CA3AF?text=Product+Mockup+Unavailable'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Feature Section: Quality & Planet Deep Dive -->
+        <section id="features" class="py-16 md:py-24 bg-deep-navy/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-eco-green">Two Reasons to Switch</h2>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    
+                    <!-- Feature 1: Fabric Longevity (Quality) -->
+                    <div class="p-8 bg-deep-navy rounded-xl shadow-xl border border-soft-blue/20">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <i data-lucide="gem" class="w-8 h-8 text-fabric-cream"></i>
+                            <h3 class="text-2xl font-semibold text-fabric-cream">Uncompromising Fabric Quality</h3>
+                        </div>
+                        <p class="text-soft-blue text-lg leading-relaxed">
+                            Our plant-based formula is pH-neutral and free from harsh sulfates, parabens, and synthetic dyes. It cleans deep without stripping essential oils or damaging delicate fibers. This means your cashmere stays soft, your silk retains its luster, and colors stay vibrant wash after wash. **Extend the life of your wardrobe.**
+                        </p>
+                        <ul class="mt-4 space-y-2 text-soft-blue">
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 text-eco-green"></i>Preserves color integrity</li>
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 text-eco-green"></i>Gentle on wool and silk</li>
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 text-eco-green"></i>No residue buildup</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 2: Planetary Safety (Planet) -->
+                    <div class="p-8 bg-deep-navy rounded-xl shadow-xl border border-soft-blue/20">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <i data-lucide="leaf" class="w-8 h-8 text-eco-green"></i>
+                            <h3 class="text-2xl font-semibold text-fabric-cream">A Promise to the Planet</h3>
+                        </div>
+                        <p class="text-soft-blue text-lg leading-relaxed">
+                            Every drop of EcoThread is 100% biodegradable, breaking down safely and quickly without harming aquatic ecosystems. We use recycled and recyclable packaging, and our ingredients are ethically sourced to minimize our global footprint. When you choose EcoThread, you're investing in cleaner waterways and a healthier future.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-soft-blue">
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 text-eco-green"></i>100% Biodegradable formula</li>
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 text-eco-green"></i>Recycled and refillable packaging</li>
+                            <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 text-eco-green"></i>Free from phosphates and toxins</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Product Showcase/Shop Section -->
+        <section id="shop" class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-fabric-cream">The EcoThread Collection</h2>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Product Card 1: Signature Cleanse -->
+                    <div class="bg-deep-navy p-6 rounded-xl shadow-2xl border border-eco-green/30 transform hover:scale-[1.02] transition duration-300">
+                        <div class="product-image-holder aspect-square rounded-lg mb-4 flex items-center justify-center p-4">
+                            <img src="https://placehold.co/250x300/101828/9CA3AF?text=Signature+Cleanse" alt="Signature Cleanse bottle" class="w-3/4 rounded-lg" onerror="this.src='https://placehold.co/250x300/101828/9CA3AF?text=Signature+Cleanse+Mockup'">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-eco-green">Signature Cleanse</h3>
+                        <p class="text-soft-blue mb-4">The everyday hero. Perfect for mixed loads and retaining the integrity of daily wear.</p>
+                        <p class="text-3xl font-bold mb-4 text-fabric-cream">$18.00</p>
+                        <button class="w-full py-3 rounded-full bg-fabric-cream text-deep-navy font-semibold hover:bg-soft-blue hover:text-fabric-cream transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Product Card 2: Delicates Therapy -->
+                    <div class="bg-deep-navy p-6 rounded-xl shadow-2xl border border-eco-green/30 transform hover:scale-[1.02] transition duration-300">
+                        <div class="product-image-holder aspect-square rounded-lg mb-4 flex items-center justify-center p-4">
+                            <img src="https://placehold.co/250x300/101828/9CA3AF?text=Delicates+Therapy" alt="Delicates Therapy bottle" class="w-3/4 rounded-lg" onerror="this.src='https://placehold.co/250x300/101828/9CA3AF?text=Delicates+Therapy+Mockup'">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-eco-green">Delicates Therapy</h3>
+                        <p class="text-soft-blue mb-4">A pH-balanced wash specifically formulated for silk, lace, and fine synthetics.</p>
+                        <p class="text-3xl font-bold mb-4 text-fabric-cream">$22.00</p>
+                        <button class="w-full py-3 rounded-full bg-fabric-cream text-deep-navy font-semibold hover:bg-soft-blue hover:text-fabric-cream transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Product Card 3: Concentrated Refill -->
+                    <div class="bg-deep-navy p-6 rounded-xl shadow-2xl border border-eco-green/30 transform hover:scale-[1.02] transition duration-300">
+                        <div class="product-image-holder aspect-square rounded-lg mb-4 flex items-center justify-center p-4">
+                            <img src="https://placehold.co/250x300/101828/9CA3AF?text=Concentrated+Refill" alt="Concentrated Refill pouch" class="w-3/4 rounded-lg" onerror="this.src='https://placehold.co/250x300/101828/9CA3AF?text=Refill+Pouch+Mockup'">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-eco-green">Concentrated Refill Pouch</h3>
+                        <p class="text-soft-blue mb-4">Eco-friendly refill option. Reduces plastic waste by 80% compared to a new bottle.</p>
+                        <p class="text-3xl font-bold mb-4 text-fabric-cream">$30.00</p>
+                        <button class="w-full py-3 rounded-full bg-fabric-cream text-deep-navy font-semibold hover:bg-soft-blue hover:text-fabric-cream transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Commitment/CTA Block -->
+        <section id="commitment" class="py-20 md:py-32 bg-eco-green/10">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold mb-4 text-eco-green">Our Zero-Compromise Commitment</h2>
+                <p class="text-xl text-soft-blue mb-8">
+                    We believe you shouldn't have to choose between a deep, gentle clean for your best garments and doing right by the planet. EcoThread delivers on both.
+                </p>
+                <a href="#" class="inline-flex items-center justify-center px-10 py-4 text-lg font-semibold rounded-full shadow-lg text-fabric-cream border-2 border-fabric-cream hover:bg-fabric-cream hover:text-deep-navy transition duration-300 transform hover:scale-105">
+                    Read Our Full Story
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-deep-navy border-t border-soft-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Col 1: Logo & Mission -->
+                <div>
+                    <a href="#" class="flex items-center space-x-2 text-xl font-bold tracking-wider text-eco-green mb-4">
+                        <i data-lucide="leaf" class="w-5 h-5"></i>
+                        <span>EcoThread</span>
+                    </a>
+                    <p class="text-sm text-soft-blue">Preserving quality, one wash at a time. Kind to Earth, gentle on clothes.</p>
+                </div>
+                
+                <!-- Col 2: Shop -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-fabric-cream">Shop</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#shop" class="text-soft-blue hover:text-eco-green transition">Signature Cleanse</a></li>
+                        <li><a href="#shop" class="text-soft-blue hover:text-eco-green transition">Delicates Therapy</a></li>
+                        <li><a href="#shop" class="text-soft-blue hover:text-eco-green transition">Refills & Bundles</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3: Support -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-fabric-cream">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-soft-blue hover:text-eco-green transition">FAQ</a></li>
+                        <li><a href="#" class="text-soft-blue hover:text-eco-green transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-soft-blue hover:text-eco-green transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Connect -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-fabric-cream">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-soft-blue hover:text-eco-green transition"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                        <a href="#" class="text-soft-blue hover:text-eco-green transition"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                        <a href="#" class="text-soft-blue hover:text-eco-green transition"><i data-lucide="mail" class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-soft-blue/10 text-center">
+                <p class="text-sm text-soft-blue">&copy; 2025 EcoThread. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
